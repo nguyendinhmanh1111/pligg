@@ -11,7 +11,7 @@
  **/
  
 // Application title
-$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Pro™ ";
+$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Proï¿½ ";
 
 
 $GONX["deleteconfirm"] = ' Etes vous sur de vouloir supprimer cette copie ?\nCliquer sur OK pour confirmer.';
@@ -23,7 +23,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>
@@ -32,55 +32,55 @@ function ConfirmDelete() {
 ';
 
 // Home page content
-$GONX['homepage'] = "<b>".$GONX["title"]."</b> est une solution compléte pour les copies de sauvegardes de bases de données MySQL.<br/>
+$GONX['homepage'] = "<b>".$GONX["title"]."</b> est une solution complï¿½te pour les copies de sauvegardes de bases de donnï¿½es MySQL.<br/>
 			L'utilisation de l'application est assez simple :
 			<ul>
-			<li>En premier lieu <a href=\"?go=config\" class=tab-g>configurer</a> votre application (init.php doit être accessible en écriture - chmod 0777).</li>
-			<li>Pour créer une backup veuillez cliquer sur <a href=\"?go=create\" class=tab-g>Créer une sauvegarde</a>.</li>
+			<li>En premier lieu <a href=\"?go=config\" class=tab-g>configurer</a> votre application (init.php doit ï¿½tre accessible en ï¿½criture - chmod 0777).</li>
+			<li>Pour crï¿½er une backup veuillez cliquer sur <a href=\"?go=create\" class=tab-g>Crï¿½er une sauvegarde</a>.</li>
 			<li>Vous pouvez <a href=\"?go=list\" class=tab-g>lister</a> les copies de sauvegardes disponible et restaurer la version que vous voulez.</li>
 			</ul>
-			Attention !! Vous devez protéger le répertoire \"backup\", et il sera préférable d'utiliser un répertoire non-web et vérifier que ce fichier
-			est accessible en lecture écriture (chmod 666).
+			Attention !! Vous devez protï¿½ger le rï¿½pertoire \"backup\", et il sera prï¿½fï¿½rable d'utiliser un rï¿½pertoire non-web et vï¿½rifier que ce fichier
+			est accessible en lecture ï¿½criture (chmod 666).
 			<br/><br/>
-			Base de données utilisée : <b>".$GonxAdmin["dbname"]."</b>
+			Base de donnï¿½es utilisï¿½e : <b>".$GonxAdmin["dbname"]."</b>
 			";
 			
-$GONX["installed"] = " est installé";
-$GONX["notinstalled"] = " n'est pas installé";
+$GONX["installed"] = " est installï¿½";
+$GONX["notinstalled"] = " n'est pas installï¿½";
 $GONX["compression"] = "Compression PHP Modules";
-$GONX["autherror"] = " Veuillez entrer un login et mot de passe correct pour accéder à cette page";
+$GONX["autherror"] = " Veuillez entrer un login et mot de passe correct pour accï¿½der ï¿½ cette page";
 
 $GONX["home"] = "Accueil";
-$GONX["create"] = "Créer copie";
+$GONX["create"] = "Crï¿½er copie";
 $GONX["list"] = "Lister / Importer";
 $GONX["optimize"] = "Optimiser";
 $GONX["monitor"] = "Moniteur";
-$GONX["logout"] = "Déconnecter";
+$GONX["logout"] = "Dï¿½connecter";
 			
 $GONX["backup"] = "Copie de sauvegarde de ";
-$GONX["iscorrectcreat"] = "est correctement crée dans";
-$GONX["iscorrectimport"] = "est correctement crée importé dans la base de données";
-$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;Veuillez choisir la copie de sauvegarde à importer depuis cette liste";
-$GONX["importbackupfile"] = "Ou bien télécharger votre fichier de sauvegarde";
+$GONX["iscorrectcreat"] = "est correctement crï¿½e dans";
+$GONX["iscorrectimport"] = "est correctement crï¿½e importï¿½ dans la base de donnï¿½es";
+$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;Veuillez choisir la copie de sauvegarde ï¿½ importer depuis cette liste";
+$GONX["importbackupfile"] = "Ou bien tï¿½lï¿½charger votre fichier de sauvegarde";
 $GONX["delete"] = "Supprimer";
-$GONX["nobckupfile"] = "Aucune copie de sauvegarde disponible. Cliquer sur <a href=\"?go=create\" class=tab-g>Créer une sauvegarde</a> pour sauvegarder votre BD";
+$GONX["nobckupfile"] = "Aucune copie de sauvegarde disponible. Cliquer sur <a href=\"?go=create\" class=tab-g>Crï¿½er une sauvegarde</a> pour sauvegarder votre BD";
 $GONX["importbackup"] = "Importer une copie de sauvegarde";
 $GONX["importbackupdump"] = "Utiliser MySQL Dump";
 $GONX["configure"] = "Config";
 $GONX["configureapp"] = "Configurer votre application </b><i>(Chmod 0777 init.php avant d'utiliser cette fonction)</i>";
-$GONX["totalbackupsize"] = "Taille totale du répertoire de sauvegarde ";
+$GONX["totalbackupsize"] = "Taille totale du rï¿½pertoire de sauvegarde ";
 $GONX["chgdisplayorder"] = "Modifier l'ordre d'affichage";
 $GONX["next"] = "Suivante";
-$GONX["prev"] = "Précédente";
+$GONX["prev"] = "Prï¿½cï¿½dente";
 
 $GONX["structonly"] = "Structure uniquement";
-$GONX["checkall"] = "Sélectionner tout";
-$GONX["uncheckall"] = "Sélectionner aucun";
-$GONX["tablesmenuhelp"] = "<u>Aide</u>  : Si vous trouvez <label>un label</label> ça veut dire qu'il y a eu des changements dans cette table.";
-$GONX["backupholedb"] = "Cliquez ici pour créer une copie de sauvegarde de la base entiére :";
-$GONX["selecttables"] = "Ou bien sélectionnez les tables à sauvegarder :";
+$GONX["checkall"] = "Sï¿½lectionner tout";
+$GONX["uncheckall"] = "Sï¿½lectionner aucun";
+$GONX["tablesmenuhelp"] = "<u>Aide</u>  : Si vous trouvez <label>un label</label> ï¿½a veut dire qu'il y a eu des changements dans cette table.";
+$GONX["backupholedb"] = "Cliquez ici pour crï¿½er une copie de sauvegarde de la base entiï¿½re :";
+$GONX["selecttables"] = "Ou bien sï¿½lectionnez les tables ï¿½ sauvegarder :";
 
-$GONX["ignoredtables"] = "Table ignorée ";
-$GONX["reservedwords"] = "Mot MySQL réservé";
+$GONX["ignoredtables"] = "Table ignorï¿½e ";
+$GONX["reservedwords"] = "Mot MySQL rï¿½servï¿½";
 
 ?>

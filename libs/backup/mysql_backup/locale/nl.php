@@ -12,7 +12,7 @@
  **/
  
 // Application title
-$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Pro™ ";
+$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Proï¿½ ";
 
 $GONX["deleteconfirm"] = ' Weet u zeker dat u dit bestand wilt verwijderen ?\nKlik OK voor bevestiging.';
 
@@ -23,7 +23,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>
@@ -45,8 +45,8 @@ $GONX['homepage'] = "<b>".$GONX["title"]."</b> is een complete oplossing voor he
 			Database welke wordt gebruikt : <b>".$GonxAdmin["dbname"]."</b>
 			";
 			
-$GONX["installed"]          = " is geïnstalleerd";
-$GONX["notinstalled"]       = " is niet geïnstalleerd";
+$GONX["installed"]          = " is geï¿½nstalleerd";
+$GONX["notinstalled"]       = " is niet geï¿½nstalleerd";
 $GONX["compression"]        = "Compression PHP Modules";
 $GONX["autherror"]          = " Voer uw gebruikersnaam en wachtwoord in voor toegang tot deze pagina";
 
@@ -59,8 +59,8 @@ $GONX["logout"]             = "Uitloggen";
 			
 $GONX["backup"]             = "Backup van";
 $GONX["iscorrectcreat"]     = "is succesvol gemaakt in ";
-$GONX["iscorrectimport"]    = "is succesvol geïmporteerd in de database";
-$GONX["selectbackupfile"]   = "&nbsp;&nbsp;&nbsp;&nbsp;Selecteer één van de backup bestanden om te importeren";
+$GONX["iscorrectimport"]    = "is succesvol geï¿½mporteerd in de database";
+$GONX["selectbackupfile"]   = "&nbsp;&nbsp;&nbsp;&nbsp;Selecteer ï¿½ï¿½n van de backup bestanden om te importeren";
 $GONX["importbackupfile"]   = "Of upload hier";
 $GONX["delete"]             = "Verwijder";
 $GONX["nobckupfile"]        = "Geen backup bestanden aanwezig. Klik op <a href=\"?go=create\" class=tab-g>Maak een Backup</a> om een backup van je DB te maken";

@@ -8,13 +8,13 @@
  * @copyright Copyright (c) 2004
  * @version $Id$ - 08/04/2004 16:20:30 - en.php
  * @access public
- * @Swedish localization by Björn Mildh <bjorn at mildh dot se>
+ * @Swedish localization by Bjï¿½rn Mildh <bjorn at mildh dot se>
  **/
  
 // Application title
-$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Pro™ ";
+$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Proï¿½ ";
 
-$GONX["deleteconfirm"] = ' Vill du verkligen radera den här filen?\nKlicka OK för att bekräfta.';
+$GONX["deleteconfirm"] = ' Vill du verkligen radera den hï¿½r filen?\nKlicka OK fï¿½r att bekrï¿½fta.';
 
 $GONX["header"] = '<html>
 <head>
@@ -23,7 +23,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>
@@ -32,54 +32,54 @@ function ConfirmDelete() {
 ';
 
 // Home page content
-$GONX['homepage'] = "<b>".$GONX["title"]."</b> är en komplett lösning för att säkerhetskopiera och återställa en MySQL-databas.<br/>
-			Det är enkelt att använda detta program:
+$GONX['homepage'] = "<b>".$GONX["title"]."</b> ï¿½r en komplett lï¿½sning fï¿½r att sï¿½kerhetskopiera och ï¿½terstï¿½lla en MySQL-databas.<br/>
+			Det ï¿½r enkelt att anvï¿½nda detta program:
 			<ul>
-			<li>Börja med dina <a href=\"?go=config\" class=tab-g>inställningar</a> (init.php ska vara chmod till 0777).</li>
-			<li>För att skapa en säkerhetskopia, klicka på <a href=\"?go=create\" class=tab-g>Skapa en säkerhetskopia</a>.</li>
-			<li>Du kan <a href=\"?go=list\" class=tab-g>lista</a> tillgängliga säkerhetskopior för att återställa till den kopia du vill ha.</li>
+			<li>Bï¿½rja med dina <a href=\"?go=config\" class=tab-g>instï¿½llningar</a> (init.php ska vara chmod till 0777).</li>
+			<li>Fï¿½r att skapa en sï¿½kerhetskopia, klicka pï¿½ <a href=\"?go=create\" class=tab-g>Skapa en sï¿½kerhetskopia</a>.</li>
+			<li>Du kan <a href=\"?go=list\" class=tab-g>lista</a> tillgï¿½ngliga sï¿½kerhetskopior fï¿½r att ï¿½terstï¿½lla till den kopia du vill ha.</li>
 			</ul>
-			Glöm inte att skydda \"backup\"-katalogen. Det bästa är om du skapar den utanför webb-katalogen där systemet kan skapa en skyddade kopior av databasen.
+			Glï¿½m inte att skydda \"backup\"-katalogen. Det bï¿½sta ï¿½r om du skapar den utanfï¿½r webb-katalogen dï¿½r systemet kan skapa en skyddade kopior av databasen.
 			<br/><br/>
-			Använd databas: <b>".$GonxAdmin["dbname"]."</b>
+			Anvï¿½nd databas: <b>".$GonxAdmin["dbname"]."</b>
 			";
 			
-$GONX["installed"] = " är installerad";
-$GONX["notinstalled"] = " är inte installerad";
+$GONX["installed"] = " ï¿½r installerad";
+$GONX["notinstalled"] = " ï¿½r inte installerad";
 $GONX["compression"] = "PHP kompressions-moduler";
-$GONX["autherror"] = " Fyll i korrekt användarnamn och lösenord för att fortsätta";
+$GONX["autherror"] = " Fyll i korrekt anvï¿½ndarnamn och lï¿½senord fï¿½r att fortsï¿½tta";
 
 $GONX["home"] = "Hem";
-$GONX["create"] = "Skapa en säkerhetskopia";
-$GONX["list"] = "Lista/Importera säkerhetskopior";
+$GONX["create"] = "Skapa en sï¿½kerhetskopia";
+$GONX["list"] = "Lista/Importera sï¿½kerhetskopior";
 $GONX["optimize"] = "Optimera";
 $GONX["monitor"] = "Detaljer";
 $GONX["logout"] = "Logga ut";
 			
-$GONX["backup"] = "Säkerhetskopia från";
+$GONX["backup"] = "Sï¿½kerhetskopia frï¿½n";
 $GONX["iscorrectcreat"] = "blev korrekt skapad i";
 $GONX["iscorrectimport"] = "blev korrekt importerad i databasen";
-$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;Välj någon av de tillgängliga säkerhetskopiorna att återställa från";
-$GONX["importbackupfile"] = "Eller ladda upp den här";
+$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;Vï¿½lj nï¿½gon av de tillgï¿½ngliga sï¿½kerhetskopiorna att ï¿½terstï¿½lla frï¿½n";
+$GONX["importbackupfile"] = "Eller ladda upp den hï¿½r";
 $GONX["delete"] = "Radera";
-$GONX["nobckupfile"] = "Ingen säkerhetskopia tillgänglig. Välj <a href=\"?go=create\" class=tab-g>Skapa säkerhetskopia</a> för att skapa en säkerhetskopia av din databas";
-$GONX["importbackup"] = "Importera säkerhetskopia från fil";
-$GONX["importbackupdump"] = "Använd MySQL Dump";
-$GONX["configure"] = "Inställningar";
-$GONX["configureapp"] = "Gör inställningar för ditt program </b><i>(init.php måste vara chmod 0777 innan denna funktion används)</i>";
-$GONX["totalbackupsize"] = "Total storlek av alla säkerhetskopior ";
-$GONX["chgdisplayorder"] = "Ändra listans sortering";
-$GONX["next"] = "Nästa";
-$GONX["prev"] = "Förra";
+$GONX["nobckupfile"] = "Ingen sï¿½kerhetskopia tillgï¿½nglig. Vï¿½lj <a href=\"?go=create\" class=tab-g>Skapa sï¿½kerhetskopia</a> fï¿½r att skapa en sï¿½kerhetskopia av din databas";
+$GONX["importbackup"] = "Importera sï¿½kerhetskopia frï¿½n fil";
+$GONX["importbackupdump"] = "Anvï¿½nd MySQL Dump";
+$GONX["configure"] = "Instï¿½llningar";
+$GONX["configureapp"] = "Gï¿½r instï¿½llningar fï¿½r ditt program </b><i>(init.php mï¿½ste vara chmod 0777 innan denna funktion anvï¿½nds)</i>";
+$GONX["totalbackupsize"] = "Total storlek av alla sï¿½kerhetskopior ";
+$GONX["chgdisplayorder"] = "ï¿½ndra listans sortering";
+$GONX["next"] = "Nï¿½sta";
+$GONX["prev"] = "Fï¿½rra";
 
 $GONX["structonly"] = "Endast struktur";
 $GONX["checkall"] = "Markera alla";
 $GONX["uncheckall"] = "Avmarkera alla";
-$GONX["tablesmenuhelp"] = "<u>Hjälp</u>  : om du ser <label>rubriker</label> betyder det att tabellen ändrats.";
-$GONX["backupholedb"] = "Klicka här för att skapa en säkerhetskopia av hela databasen:";
-$GONX["selecttables"] = "Eller välj de tabeller du vill säkerhetskopiera här:";
+$GONX["tablesmenuhelp"] = "<u>Hjï¿½lp</u>  : om du ser <label>rubriker</label> betyder det att tabellen ï¿½ndrats.";
+$GONX["backupholedb"] = "Klicka hï¿½r fï¿½r att skapa en sï¿½kerhetskopia av hela databasen:";
+$GONX["selecttables"] = "Eller vï¿½lj de tabeller du vill sï¿½kerhetskopiera hï¿½r:";
 
 $GONX["ignoredtables"] = "Ignorerade tabeller";
-$GONX["reservedwords"] = "Reserverade ord för MySQL";
+$GONX["reservedwords"] = "Reserverade ord fï¿½r MySQL";
 
 ?>

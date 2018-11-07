@@ -14,7 +14,7 @@
 // Application title
 $GONX["title"] = "MySQL Backup Pro&trade;";
 
-$GONX["deleteconfirm"] = 'È·ÈÏÒªÉ¾³ý´ËÎÄ¼þÂð£¿\n\nµã»÷È·ÈÏ°´Å¥¼ÌÐø¡£';
+$GONX["deleteconfirm"] = 'È·ï¿½ï¿½ÒªÉ¾ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½\n\nï¿½ï¿½ï¿½È·ï¿½Ï°ï¿½Å¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½';
 
 $GONX["header"] = '<html>
 <head>
@@ -24,7 +24,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>
@@ -33,54 +33,54 @@ function ConfirmDelete() {
 ';
 
 // Home page content
-$GONX['homepage'] = "<b>".$GONX["title"]."</b> ÊÇÒ»¸öÕë¶Ô Mysql Êý¾Ý¿â±¸·Ý¼°»Ö¸´µÄÍêÕû½â¾ö·½°¸¡£<br/> <br />
-			Ê¹ÓÃ²½Öè£º
+$GONX['homepage'] = "<b>".$GONX["title"]."</b> ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ Mysql ï¿½ï¿½ï¿½Ý¿â±¸ï¿½Ý¼ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<br/> <br />
+			Ê¹ï¿½Ã²ï¿½ï¿½è£º
 			<ul>
-			<li>Ê×ÏÈÐèÒª¶ÔÄúµÄ³ÌÐò½øÐÐ <a href=\"?go=config\" class=tab-g>ÅäÖÃ</a> (linuxÏÂ init.php µÄÊôÐÔÐèÒªÎª 0777)¡£</li>
-			<li>Òª´´½¨Ò»¸ö±¸·Ý£¬Çëµã»÷ <a href=\"?go=create\" class=tab-g>´´½¨±¸·Ý</a>¡£</li>
-			<li><a href=\"?go=list\" class=tab-g>µã»÷ÕâÀï</a> ²é¿´ÒÑ¾­´æÔÚµÄÊý¾Ý¿â±¸·Ý¡£</li>
+			<li>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ <a href=\"?go=config\" class=tab-g>ï¿½ï¿½ï¿½ï¿½</a> (linuxï¿½ï¿½ init.php ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÒªÎª 0777)ï¿½ï¿½</li>
+			<li>Òªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ <a href=\"?go=create\" class=tab-g>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a>ï¿½ï¿½</li>
+			<li><a href=\"?go=list\" class=tab-g>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a> ï¿½é¿´ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½Ý¿â±¸ï¿½Ý¡ï¿½</li>
 			</ul>
-			±ðÍüÁË±£´æºÃÄãµÄ \"backup\" Ä¿Â¼£¬Ò»¸ö±È½ÏºÃµÄ°ì·¨ÊÇ½¨Á¢Ò»¸ö·Ç WEB Ä¿Â¼ (ÎÞ·¨Í¨¹ýWEB·ÃÎÊ) ÓÃÀ´±£´æÄúµÄ±¸·ÝÊý¾Ý¡£
+			ï¿½ï¿½ï¿½ï¿½ï¿½Ë±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ \"backup\" Ä¿Â¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½È½ÏºÃµÄ°ì·¨ï¿½Ç½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ WEB Ä¿Â¼ (ï¿½Þ·ï¿½Í¨ï¿½ï¿½WEBï¿½ï¿½ï¿½ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¡ï¿½
 			<br/><br/>
-			µ±Ç°Êý¾Ý¿â: <b>".$GonxAdmin["dbname"]."</b>
+			ï¿½ï¿½Ç°ï¿½ï¿½ï¿½Ý¿ï¿½: <b>".$GonxAdmin["dbname"]."</b>
 			";
 			
-$GONX["installed"] = " ÒÑ¾­±»°²×°";
-$GONX["notinstalled"] = " »¹Ã»ÓÐ°²×°";
-$GONX["compression"] = "PHP Ñ¹ËõÄ£¿é";
-$GONX["autherror"] = " ÇëÊäÈëÕýÈ·µÄÈÏÖ¤ÐÅÏ¢";
+$GONX["installed"] = " ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½×°";
+$GONX["notinstalled"] = " ï¿½ï¿½Ã»ï¿½Ð°ï¿½×°";
+$GONX["compression"] = "PHP Ñ¹ï¿½ï¿½Ä£ï¿½ï¿½";
+$GONX["autherror"] = " ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½Ï¢";
 
-$GONX["home"] = "Ö÷Ò³";
-$GONX["create"] = "´´½¨±¸·Ý";
-$GONX["list"] = "±¸·ÝÁÐ±í/µ¼Èë";
-$GONX["optimize"] = "ÓÅ»¯Êý¾Ý¿â";
-$GONX["monitor"] = "Êý¾Ý¿âÏêÇé";
-$GONX["logout"] = "×¢Ïú";
+$GONX["home"] = "ï¿½ï¿½Ò³";
+$GONX["create"] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["list"] = "ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½/ï¿½ï¿½ï¿½ï¿½";
+$GONX["optimize"] = "ï¿½Å»ï¿½ï¿½ï¿½ï¿½Ý¿ï¿½";
+$GONX["monitor"] = "ï¿½ï¿½ï¿½Ý¿ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["logout"] = "×¢ï¿½ï¿½";
 			
-$GONX["backup"] = "±¸·ÝÊý¾Ý";
-$GONX["iscorrectcreat"] = "³É¹¦´´½¨";
-$GONX["iscorrectimport"] = "³É¹¦±»µ¼Èë";
-$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;ÔÚÕâÀï¿ÉÒÔÑ¡ÔñÒÑ¾­´æÔÚµÄ±¸·ÝÊý¾Ý½øÐÐ»Ö¸´";
-$GONX["importbackupfile"] = "»òÕßÔÚÕâÀïÉÏ´«±¾µØµÄ±¸·ÝÊý¾Ý";
-$GONX["delete"] = "É¾³ý";
-$GONX["nobckupfile"] = "Ã»ÓÐÈÎºÎ±¸·ÝÊý¾Ý´æÔÚ¡£ µã»÷ <a href=\"?go=create\" class=tab-g>´´½¨±¸·Ý</a> À´´´½¨Ò»¸öÐÂµÄ±¸·ÝÏîÄ¿";
-$GONX["importbackup"] = "µ¼Èë±¸·ÝÎÄ¼þ";
-$GONX["importbackupdump"] = "Ê¹ÓÃ MySQL Dump";
-$GONX["configure"] = "³õÊ¼»¯ÅäÖÃ";
-$GONX["configureapp"] = "³õÊ¼»¯ÅäÖÃ </b><i>(ÇëÈ·ÈÏ init.php µÄÊôÐÔÎª¿ÉÐ´ [0777])</i>";
-$GONX["totalbackupsize"] = "±¸·ÝÄ¿Â¼×Ü´óÐ¡ ";
-$GONX["chgdisplayorder"] = "ÅÅÐò";
-$GONX["next"] = "ÏÂÒ»¸ö";
-$GONX["prev"] = "ÉÏÒ»¸ö";
+$GONX["backup"] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["iscorrectcreat"] = "ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["iscorrectimport"] = "ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ÚµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý½ï¿½ï¿½Ð»Ö¸ï¿½";
+$GONX["importbackupfile"] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ØµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["delete"] = "É¾ï¿½ï¿½";
+$GONX["nobckupfile"] = "Ã»ï¿½ï¿½ï¿½ÎºÎ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½Ú¡ï¿½ ï¿½ï¿½ï¿½ <a href=\"?go=create\" class=tab-g>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</a> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ÂµÄ±ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿";
+$GONX["importbackup"] = "ï¿½ï¿½ï¿½ë±¸ï¿½ï¿½ï¿½Ä¼ï¿½";
+$GONX["importbackupdump"] = "Ê¹ï¿½ï¿½ MySQL Dump";
+$GONX["configure"] = "ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
+$GONX["configureapp"] = "ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ </b><i>(ï¿½ï¿½È·ï¿½ï¿½ init.php ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ð´ [0777])</i>";
+$GONX["totalbackupsize"] = "ï¿½ï¿½ï¿½ï¿½Ä¿Â¼ï¿½Ü´ï¿½Ð¡ ";
+$GONX["chgdisplayorder"] = "ï¿½ï¿½ï¿½ï¿½";
+$GONX["next"] = "ï¿½ï¿½Ò»ï¿½ï¿½";
+$GONX["prev"] = "ï¿½ï¿½Ò»ï¿½ï¿½";
 
-$GONX["structonly"] = "½ö½á¹¹";
+$GONX["structonly"] = "ï¿½ï¿½ï¿½á¹¹";
 $GONX["checkall"] = "È«Ñ¡";
-$GONX["uncheckall"] = "È¡ÏûÈ«Ñ¡";
-$GONX["tablesmenuhelp"] = "<u><b>ÌáÊ¾</b></u>  : Èç¹ûÄú¿´µ½ <label>labels</label> ±êÖ¾£¬±íÃ÷ÕâÐ©Êý¾Ý¿â´´½¨ºóÓÐ±»¸üÐÂ¹ý¡£";
-$GONX["backupholedb"] = "µã»÷ÕâÀï¶ÔÕû¸ö¿â½øÐÐÍêÕû±¸·Ý:";
-$GONX["selecttables"] = "»òÕßÔÚÕâÀïÑ¡ÔñÐèÒª±¸·ÝµÄ±í:";
+$GONX["uncheckall"] = "È¡ï¿½ï¿½È«Ñ¡";
+$GONX["tablesmenuhelp"] = "<u><b>ï¿½ï¿½Ê¾</b></u>  : ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ <label>labels</label> ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð©ï¿½ï¿½ï¿½Ý¿â´´ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½Â¹ï¿½ï¿½ï¿½";
+$GONX["backupholedb"] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½:";
+$GONX["selecttables"] = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ÝµÄ±ï¿½:";
 
-$GONX["ignoredtables"] = "ºöÂÔµÄ±í";
-$GONX["reservedwords"] = "Mysql ±£Áô×Ö";
+$GONX["ignoredtables"] = "ï¿½ï¿½ï¿½ÔµÄ±ï¿½";
+$GONX["reservedwords"] = "Mysql ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
 
 ?>

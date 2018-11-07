@@ -11,7 +11,7 @@
  **/
  
 // Application title
-$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Pro™ ";
+$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Proï¿½ ";
 
 $GONX["deleteconfirm"] = ' Are you sure you want to delete this file ?\nClick OK to confirm.';
 
@@ -22,7 +22,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>

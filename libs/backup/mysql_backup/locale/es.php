@@ -1,7 +1,7 @@
 <?php
 
 /**
- * MySQL Backup Pro traducción al castellano
+ * MySQL Backup Pro traducciï¿½n al castellano
  * 
  * @package GONX
  * @author Ben Yacoub Hatem <hatem@php.net>
@@ -12,10 +12,10 @@
  **/
  
 // Application title
-$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Pro™ ";
+$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Proï¿½ ";
 
 
-$GONX["deleteconfirm"] = '¿Are you sure you want to delete this file ?\nClick OK to confirm.';
+$GONX["deleteconfirm"] = 'ï¿½Are you sure you want to delete this file ?\nClick OK to confirm.';
 
 $GONX["header"] = '<html>
 <head>
@@ -24,7 +24,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>
@@ -49,7 +49,7 @@ $GONX['homepage'] = "<b>".$GONX["title"]."</b> es la soluci&oacute;n para hacer 
 $GONX["installed"] = " est&aacute; instalado";
 $GONX["notinstalled"] = " no est&aacute; instalado";
 $GONX["compression"] = "M&oacute;dulos de compresi&oacute;n PHP";
-$GONX["autherror"] = " Por favor, introduce un usuario y contraseña para acceder";
+$GONX["autherror"] = " Por favor, introduce un usuario y contraseï¿½a para acceder";
 
 $GONX["home"] = "Inicio";
 $GONX["create"] = "Crear Backup";

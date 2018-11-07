@@ -11,9 +11,9 @@
  **/
  // Traduzido por Leandro Fernandes <soumaisjava@yahoo.com.br>
 // Application title
-$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Pro™ ";
+$GONX["title"] = "&nbsp;&nbsp;MySQL Backup Proï¿½ ";
 
-$GONX["deleteconfirm"] = ' Você está certo que deseja apagar este arquivo?\nClique OK para confirmar.';
+$GONX["deleteconfirm"] = ' Vocï¿½ estï¿½ certo que deseja apagar este arquivo?\nClique OK para confirmar.';
 
 $GONX["header"] = '<html>
 <head>
@@ -22,7 +22,7 @@ $GONX["header"] = '<html>
 <script language="JavaScript" type="text/javascript">
 <!--
 function ConfirmDelete() {
-	return confirm("'.$GONX["deleteconfirm"].'");
+	return confirm("' . $GONX[ "deleteconfirm" ] . '";)
 }
 //-->
 </script>
@@ -31,22 +31,22 @@ function ConfirmDelete() {
 ';
 
 // Home page content
-$GONX['homepage'] = "<b>".$GONX["title"]."</b> é uma solução completa para criar e restaurar backup's da base MySQL.<br/>
-			O uso da aplicação é muito fácil :
+$GONX['homepage'] = "<b>".$GONX["title"]."</b> ï¿½ uma soluï¿½ï¿½o completa para criar e restaurar backup's da base MySQL.<br/>
+			O uso da aplicaï¿½ï¿½o ï¿½ muito fï¿½cil :
 			<ul>
-			<li>Primeiro <a href=\"?go=config\" class=tab-g>configure</a> Sua aplicação (init.php deve possuir chmod como 0777).</li>
+			<li>Primeiro <a href=\"?go=config\" class=tab-g>configure</a> Sua aplicaï¿½ï¿½o (init.php deve possuir chmod como 0777).</li>
 			<li>Para criar um backup apenas clique <a href=\"?go=create\" class=tab-g>Criar um Backup</a>.</li>
-			<li>Você pode <a href=\"?go=list\" class=tab-g>listar</a> Restaurar backup's disponíveis.</li>
+			<li>Vocï¿½ pode <a href=\"?go=list\" class=tab-g>listar</a> Restaurar backup's disponï¿½veis.</li>
 			</ul>
-			não esqueça de proteger o diretório de \"backup\", e é recomendável não ser um diretório acessível pela web, onde o sistema cria uma copia segura do banco de dados.
+			nï¿½o esqueï¿½a de proteger o diretï¿½rio de \"backup\", e ï¿½ recomendï¿½vel nï¿½o ser um diretï¿½rio acessï¿½vel pela web, onde o sistema cria uma copia segura do banco de dados.
 			<br/><br/>
 			Database usada : <b>".$GonxAdmin["dbname"]."</b>
 			";
 			
-$GONX["installed"] = " está instalado";
-$GONX["notinstalled"] = " não está instalado";
-$GONX["compression"] = "Módulo de compressão do PHP";
-$GONX["autherror"] = " Por favor entre com um nome de usuário correto e senha para acessa esta área";
+$GONX["installed"] = " estï¿½ instalado";
+$GONX["notinstalled"] = " nï¿½o estï¿½ instalado";
+$GONX["compression"] = "Mï¿½dulo de compressï¿½o do PHP";
+$GONX["autherror"] = " Por favor entre com um nome de usuï¿½rio correto e senha para acessa esta ï¿½rea";
 
 $GONX["home"] = "Home";
 $GONX["create"] = "Criar um Backup";
@@ -58,22 +58,22 @@ $GONX["logout"] = "Logout";
 $GONX["backup"] = "Backup de";
 $GONX["iscorrectcreat"] = "foi criado em";
 $GONX["iscorrectimport"] = "foi importado para o banco de dados";
-$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;seleciona por backups disponíveis";
+$GONX["selectbackupfile"] = "&nbsp;&nbsp;&nbsp;&nbsp;seleciona por backups disponï¿½veis";
 $GONX["importbackupfile"] = "Ou faz upload do arquivo aqui";
 $GONX["delete"] = "Apagar";
-$GONX["nobckupfile"] = "Não existem arquivos de backup disponíveis. Clique em <a href=\"?go=create\" class=tab-g>Criar um backup</a> para criar um backup do banco de dados";
+$GONX["nobckupfile"] = "Nï¿½o existem arquivos de backup disponï¿½veis. Clique em <a href=\"?go=create\" class=tab-g>Criar um backup</a> para criar um backup do banco de dados";
 $GONX["importbackup"] = "Importar arquivo de Backup";
 $GONX["configure"] = "Configurar";
-$GONX["configureapp"] = "Configurar sua applicação </b><i>(Chmod 0777 init.php antes de usar esta aplicação)</i>";
-$GONX["totalbackupsize"] = "Tamanho total do diretório de backup";
-$GONX["chgdisplayorder"] = "Mudar a ordem de exibição";
-$GONX["next"] = "Próximo";
+$GONX["configureapp"] = "Configurar sua applicaï¿½ï¿½o </b><i>(Chmod 0777 init.php antes de usar esta aplicaï¿½ï¿½o)</i>";
+$GONX["totalbackupsize"] = "Tamanho total do diretï¿½rio de backup";
+$GONX["chgdisplayorder"] = "Mudar a ordem de exibiï¿½ï¿½o";
+$GONX["next"] = "Prï¿½ximo";
 $GONX["prev"] = "Anterior";
 
 $GONX["structonly"] = "Estrutura somente";
 $GONX["checkall"] = "Marcar todos";
 $GONX["uncheckall"] = "Desmarcar todos";
-$GONX["tablesmenuhelp"] = "<u>Help</u>  : Se você ver <label>labels</label> ele permite que faça mudanças nas tabelas.";
+$GONX["tablesmenuhelp"] = "<u>Help</u>  : Se vocï¿½ ver <label>labels</label> ele permite que faï¿½a mudanï¿½as nas tabelas.";
 $GONX["backupholedb"] = "clique aqui para criar uma regra de backup para o banco de dados :";
 $GONX["selecttables"] = "Ou selecione as tabelas de backup agora :";
 
