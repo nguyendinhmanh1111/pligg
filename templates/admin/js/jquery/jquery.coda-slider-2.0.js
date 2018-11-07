@@ -48,7 +48,7 @@ $.fn.codaSlider = function(settings) {
 			slider.parent().addClass("arrows");
 			slider.before('<div class="coda-nav-left" id="coda-nav-left-' + sliderCount + '"><a href="#">' + settings.dynamicArrowLeftText + '</a></div>');
 			slider.after('<div class="coda-nav-right" id="coda-nav-right-' + sliderCount + '"><a href="#">' + settings.dynamicArrowRightText + '</a></div>');
-		};
+		}
 		
 		var panelWidth = slider.find(".panel").width();
 		var panelCount = slider.find(".panel").size();
@@ -74,7 +74,7 @@ $.fn.codaSlider = function(settings) {
 		// Otherwise, we'll just set the current panel to 1...
 		} else { 
 			var currentPanel = 1;
-		};
+		}
 			
 		// Left arrow click
 		$("#coda-nav-left-" + sliderCount + " a").click(function(){
@@ -89,9 +89,9 @@ $.fn.codaSlider = function(settings) {
 				alterPanelHeight(currentPanel - 1);
 				offset = - (panelWidth*(currentPanel - 1));
 				slider.siblings('.coda-nav').find('a.current').removeClass('current').parent().prev().find('a').addClass('current');
-			};
+			}
 			$('.panel-container', slider).animate({ marginLeft: offset }, settings.slideEaseDuration, settings.slideEaseFunction);
-			if (settings.crossLinking) { location.hash = currentPanel }; // Change the URL hash (cross-linking)
+			if (settings.crossLinking) { location.hash = currentPanel } // Change the URL hash (cross-linking)
 			return false;
 		});
 			
@@ -108,9 +108,9 @@ $.fn.codaSlider = function(settings) {
 				alterPanelHeight(currentPanel);
 				currentPanel += 1;
 				slider.siblings('.coda-nav').find('a.current').removeClass('current').parent().next().find('a').addClass('current');
-			};
+			}
 			$('.panel-container', slider).animate({ marginLeft: offset }, settings.slideEaseDuration, settings.slideEaseFunction);
-			if (settings.crossLinking) { location.hash = currentPanel }; // Change the URL hash (cross-linking)
+			if (settings.crossLinking) { location.hash = currentPanel } // Change the URL hash (cross-linking)
 			return false;
 		});
 		
@@ -124,7 +124,7 @@ $.fn.codaSlider = function(settings) {
 				default:
 					slider.parent().prepend(dynamicTabs);
 					break;
-			};
+			}
 			ul = $('#coda-nav-' + sliderCount + ' ul');
 			// Create the nav items
 			$('.panel', slider).each(function(n) {
@@ -139,8 +139,8 @@ $.fn.codaSlider = function(settings) {
 				case "right":
 					ul.css({ float: 'right' });
 					break;
-			};
-		};
+			}
+		}
 			
 		// If we need a tabbed nav
 		$('#coda-nav-' + sliderCount + ' a').each(function(z) {
@@ -152,7 +152,7 @@ $.fn.codaSlider = function(settings) {
 				alterPanelHeight(z);
 				currentPanel = z + 1;
 				$('.panel-container', slider).animate({ marginLeft: offset }, settings.slideEaseDuration, settings.slideEaseFunction);
-				if (!settings.crossLinking) { return false }; // Don't change the URL hash unless cross-linking is specified
+				if (!settings.crossLinking) { return false } // Don't change the URL hash unless cross-linking is specified
 			});
 		});
 		
@@ -170,9 +170,9 @@ $.fn.codaSlider = function(settings) {
 					slider.siblings('.coda-nav').find('a').removeClass('current').parents('ul').find('li:eq(' + (targetPanel - 1) + ') a').addClass('current');
 					// Slide
 					$('.panel-container', slider).animate({ marginLeft: offset }, settings.slideEaseDuration, settings.slideEaseFunction);
-					if (!settings.crossLinking) { return false }; // Don't change the URL hash unless cross-linking is specified
+					if (!settings.crossLinking) { return false } // Don't change the URL hash unless cross-linking is specified
 				});
-			};
+			}
 		});
 			
 		// Specify which tab is initially set to "current". Depends on if the loaded URL had a hash or not (cross-linking).
@@ -184,27 +184,27 @@ $.fn.codaSlider = function(settings) {
 		// Otherwise we must be loading Panel 1, so make the first tab the current one.
 		} else {
 			$("#coda-nav-" + sliderCount + " a:eq(0)").addClass("current");
-		};
+		}
 		
 		// Set the height of the first panel
 		if (settings.autoHeight) {
 			panelHeight = $('.panel:eq(' + (currentPanel - 1) + ')', slider).height();
 			slider.css({ height: panelHeight });
-		};
+		}
 		
 		// Trigger autoSlide
 		if (settings.autoSlide) {
 			slider.ready(function() {
 				setTimeout(autoSlide,settings.autoSlideInterval);
 			});
-		};
+		}
 		
 		function alterPanelHeight(x) {
 			if (settings.autoHeight) {
 				panelHeight = $('.panel:eq(' + x + ')', slider).height()
 				slider.animate({ height: panelHeight }, settings.autoHeightEaseDuration, settings.autoHeightEaseFunction);
-			};
-		};
+			}
+		}
 		
 		function autoSlide() {
 			if (navClicks == 0 || !settings.autoSlideStopWhenClicked) {
@@ -214,15 +214,15 @@ $.fn.codaSlider = function(settings) {
 				} else {
 					var offset = - (panelWidth*currentPanel);
 					currentPanel += 1;
-				};
+				}
 				alterPanelHeight(currentPanel - 1);
 				// Switch the current tab:
 				slider.siblings('.coda-nav').find('a').removeClass('current').parents('ul').find('li:eq(' + (currentPanel - 1) + ') a').addClass('current');
 				// Slide:
 				$('.panel-container', slider).animate({ marginLeft: offset }, settings.slideEaseDuration, settings.slideEaseFunction);
 				setTimeout(autoSlide,settings.autoSlideInterval);
-			};
-		};
+			}
+		}
 		
 		// Kill the preloader
 		$('.panel', slider).show().end().find("p.loading").remove();
