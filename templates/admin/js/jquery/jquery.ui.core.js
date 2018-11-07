@@ -7,7 +7,7 @@
  *
  * http://docs.jquery.com/UI
  */
-;jQuery.ui || (function($) {
+jQuery.ui || (function($) {
 
 //Helper functions and ui object
 $.ui = {
